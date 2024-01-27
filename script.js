@@ -19,7 +19,7 @@ function bindData(articles) {
 
     cardsContainer.innerHTML = "";
 
-    articles.forEach((article) => {
+    articles?.forEach((article) => {
         if (!article.urlToImage) article.urlToImage="./assets/imgnotavilable.png";
         const cardClone = newsCardTemplate.content.cloneNode(true);
         fillDataInCard(cardClone, article);
